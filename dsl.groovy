@@ -5,7 +5,7 @@ import java.util.concurrent.*
 jenkins = Hudson.instance
 
 now=Calendar.instance;
-def project_name = 'ARCHIE_DSL_TEST'
+def project_name = 'alert-service-precommit'
 
 println("The build is run at ${now.time}");
 

@@ -56,6 +56,18 @@
 		  <artifactId>maven-release-plugin</artifactId>
 		  <version>2.5.2</version>
 		</plugin>
+			<plugin>
+            <groupId>org.apache.tomcat.maven</groupId>
+            <artifactId>tomcat7-maven-plugin</artifactId>
+            <version>2.1</version>
+            <configuration>
+                <url>http://localhost:9080/manager</url>
+                <server>myapp-1</server>
+                <path>/myapp</path>
+                <username>jenkins</username>
+                <password>jenkins</password>
+            </configuration>
+          </plugin>
 		</plugins>
 	</build>
 	 
